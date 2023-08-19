@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&display=swap');
+
+:root {
+  font-size: 15px;
+  --color-principal: #ecbc93;
+  --tipografia-navegacion: 'Rajdhani', sans-serif;
+}
