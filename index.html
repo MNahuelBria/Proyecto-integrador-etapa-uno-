@@ -7,12 +7,24 @@
     <title>Tienda Ecommerce</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+    <header id="Barra-navegación"> <!--comienza la barra de navegación-->
+      <nav class="navegador navbar container-fluid row">
+        <div class="col"> <!--Primera columna de la barra de navegación, contiene los links a las otras paginas-->
+          <a class="VinculosPaginas" href="index.html">Inicio</a>
+          <a class="VinculosPaginas" href="paginas/contacto.html">Contacto</a>
+          <a class="VinculosPaginas" href="paginas/nosotros.html">Nosotros</a>
         </div>
-      </nav>
+        <div class="col">
+          <h1 id="Logo-empresa" class="text-center">ANDINA DECO</h1>
+        </div>
+        <div class="col columna-3">
+          <form class="d-flex" role="search">
+            <input class="form-control buscador" type="search" placeholder="Buscar">
+            <button class="btn boton-buscador" type="submit">BUSCAR</button>
+          </form>
+          <i id="CarritoCompras" class="fa-solid fa-cart-shopping fa-xl"></i>
+        </div>
+      </nav><!--finaliza la barra de navegación-->
     </header>
     <script type="module" src="/main.js"></script>
   </body>
