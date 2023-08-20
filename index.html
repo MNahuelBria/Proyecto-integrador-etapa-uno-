@@ -9,20 +9,19 @@
   <body>
     <header id="Barra-navegación"> <!--comienza la barra de navegación-->
       <nav class="navegador navbar container-fluid row">
-        <div class="col"> <!--Primera columna de la barra de navegación, contiene los links a las otras paginas-->
+        <div class="col-5"> <!--Primera columna de la barra de navegación, contiene los links a las otras paginas-->
           <a class="VinculosPaginas" href="index.html">Inicio</a>
           <a class="VinculosPaginas" href="paginas/contacto.html">Contacto</a>
           <a class="VinculosPaginas" href="paginas/nosotros.html">Nosotros</a>
         </div>
-        <div class="col">
-          <h1 id="Logo-empresa" class="text-center">ANDINA DECO</h1>
+        <div class="col-5 columna-2">
+          <a href="index.html">
+            <img id="Logotipo" src="Logo-andina.svg" alt="Logotipo ANDINA DECO">
+          </a>
+          <h1 id="Logo-empresa">ANDINA DECO</h1>
         </div>
-        <div class="col columna-3">
-          <form class="d-flex" role="search">
-            <input class="form-control buscador" type="search" placeholder="Buscar">
-            <button class="btn boton-buscador" type="submit">BUSCAR</button>
-          </form>
-          <i id="CarritoCompras" class="fa-solid fa-cart-shopping fa-xl"></i>
+        <div class="col-2 columna-3">
+          <a id="CarritoCompras" href="paginas/carrito.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
         </div>
       </nav><!--finaliza la barra de navegación-->
     </header>
