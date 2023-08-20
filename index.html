@@ -9,7 +9,7 @@
   <body>
     <header id="Barra-navegación"> <!--comienza la barra de navegación-->
       <nav class="navegador navbar container-fluid row">
-        <div class="col-5"> <!--Primera columna de la barra de navegación, contiene los links a las otras paginas-->
+        <div class="col-5"> <!--Primera columna de barra de navegación, contiene los links a las otras paginas-->
           <a class="VinculosPaginas" href="index.html">Inicio</a>
           <a class="VinculosPaginas" href="paginas/contacto.html">Contacto</a>
           <a class="VinculosPaginas" href="paginas/nosotros.html">Nosotros</a>
@@ -25,6 +25,50 @@
         </div>
       </nav><!--finaliza la barra de navegación-->
     </header>
+
+    <main>
+      <section id="Contenedor-categoria" class="container-fluid"> <!--Seccion de categoria-->
+        <h2 class="text-center Subtitulo">CATEGORIAS</h2> <!--titulo de la seccion categorias-->
+        <div class="row g-2">
+          <div class="col-6">
+            <div id="categoria-1" class="p-3 categoria"> <!--PRIMER categoria:VELAS-->
+              <h3>Velas</h3>
+            </div>
+          </div>
+          <div class="col-6">
+            <div id="categoria-2" class="p-3 categoria"> <!--SEGUNDO categoria:ESPEJOS-->
+              <h3>Espejos</h3>
+            </div>
+          </div>
+          <div class="col-6">
+            <div id="categoria-3" class="p-3 categoria"> <!--TERCER categoria:DIFUSORES-->
+              <h3>Difusores</h3>
+            </div>
+          </div>
+          <div class="col-6">
+            <div id="categoria-4" class="p-3 categoria"> <!--CUARTO categoria:SAHUMERIOS-->
+              <h3>Sahumerios</h3>
+            </div>
+          </div>
+        </div>
+      </section> <!--Fin seccion de categoria-->
+
+      <section id="Contenedor-tarjetas-productos" class="container-fluid">
+        <h2 class="text-end Subtitulo">PRODUCTOS</h2>
+        <div class="card tarjetas">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card tarjetas">b</div>
+        <div class="card tarjetas">c</div>
+        <div class="card tarjetas">d</div>
+        <div class="card tarjetas">e</div>
+      </section>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

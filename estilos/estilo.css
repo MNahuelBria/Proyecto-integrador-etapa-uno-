@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&display=swap');
 
 :root {
-  font-size: 16px;
+  font-size: 20px;
   --color-principal: #edbc93;
   --color-secundario: #e6e6e6;
+  --color-terciario: #884A39;
   --tipografia-navegacion: 'Rajdhani', sans-serif;
 }
 * {
@@ -60,8 +61,59 @@
 #CarritoCompras:hover {
   transform: translate(0px, -10px);
   transition: 3s;
-  color: black;
+  color: #403f3f;
 }
 body {
   background-color: var(--color-secundario);
+}
+#Contenedor-categoria, #Contenedor-tarjetas-productos {
+  width: 80%;
+  height: auto;
+  font-family: var(--tipografia-navegacion);
+  margin: auto;
+  padding: 2rem 0;
+}
+.Subtitulo {
+  font-weight: 600;
+  font-size: 3rem;
+  border-bottom: .1px solid var(--color-terciario);
+}
+.categoria {
+  margin: .5rem 1rem;
+  box-shadow: 6px -3px 7px 3px gray;
+  border: .2rem solid #e5b78f;
+  border-radius: .5rem 1.5rem;
+  height: 25rem;
+}
+#categoria-1 {
+  background-image: url(../public/img/Velas.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#categoria-2 {
+  background-image: url(../public/img/espejo.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#categoria-3 {
+  text-align: left;
+  background-image: url(../public/img/difusores.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#categoria-4 {
+  background-image: url(../public/img/Sahumerios.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.tarjetas {
+  display: inline-flex;
+  flex-direction: flex;
+  flex-wrap: wrap;
+  width: 15rem;
+  height: 20rem;
 }
