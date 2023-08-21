@@ -87,6 +87,11 @@ body {
   border-radius: .5rem 1.5rem;
   height: 25rem;
 }
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2D4356;
+}
 #categoria-1 {
   background-image: url(/img/Velas.webp);
   background-repeat: no-repeat;
@@ -107,7 +112,7 @@ body {
   background-size: cover;
 }
 #categoria-4 {
-  background-image: url(/img/Sahumerios.webp);
+  background-image: url(/img/Sahumerio.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -159,6 +164,7 @@ body {
 .btn:hover {
   border: 0.1rem solid #884A39;
   transition-duration: 1.5s;
+  box-shadow: 2px -2px 7px 2px #884A39;
 }
 #pie-pagina {
   background-color: var(--color-principal);
