@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Rajdhani:wght@300;400;600&display=swap');
 
 :root {
   font-size: 20px;
   --color-principal: #edbc93;
   --color-secundario: #e6e6e6;
-  --color-terciario: #884A39;
-  --tipografia-navegacion: 'Rajdhani', sans-serif;
+  --color-terciario: #ffdead;
+  /*--color-terciario: ;*/
+  --tipografia-principal: 'Rajdhani', sans-serif;
+  --tipografia-secundaria: 'Josefin Sans', sans-serif;
 }
 * {
   margin: 0;
@@ -16,7 +18,7 @@
   color: black;
   background-color: var(--color-principal);
   height: auto;
-  font-family: var(--tipografia-navegacion);
+  font-family: var(--tipografia-principal);
 }
 .navegador {
   margin: 0;
@@ -69,14 +71,14 @@ body {
 #Contenedor-categoria, #Contenedor-tarjetas-productos {
   width: 80%;
   height: auto;
-  font-family: var(--tipografia-navegacion);
+  font-family: var(--tipografia-principal);
   margin: auto;
   padding: 2rem 0;
 }
 .Subtitulo {
   font-weight: 600;
   font-size: 3rem;
-  border-bottom: .1px solid var(--color-terciario);
+  border-bottom: .1px solid #884A39;
 }
 .categoria {
   margin: .5rem 1rem;
@@ -86,34 +88,88 @@ body {
   height: 25rem;
 }
 #categoria-1 {
-  background-image: url(../public/img/Velas.webp);
+  background-image: url(/img/Velas.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 #categoria-2 {
-  background-image: url(../public/img/espejo.webp);
+  background-image: url(/img/espejo.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 #categoria-3 {
   text-align: left;
-  background-image: url(../public/img/difusores.webp);
+  background-image: url(/img/difusores.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 #categoria-4 {
-  background-image: url(../public/img/Sahumerios.webp);
+  background-image: url(/img/Sahumerios.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .tarjetas {
-  display: inline-flex;
-  flex-direction: flex;
-  flex-wrap: wrap;
+  background-color: #ffdead;
+  font-family: var(--tipografia-secundaria);
+  border-radius: 10px;
   width: 15rem;
-  height: 20rem;
+  height: 21rem;
+  margin: 1rem 1rem;
+  padding: 0;
+}
+.imagenes {
+  border-radius: 10px 10px 0 0;
+  width: 298px;
+  height: 167px;
+}
+.Titulo-Tarjetas {
+  margin: 0.2rem 0;
+  padding: 0.5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.Cuerpo-tarjetas {
+  list-style: none;
+  padding: 0 1rem;
+  margin: 0;
+}
+.items {
+  font-weight: 200;
+  margin: 10px 0;
+}
+.Boton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 60px;
+}
+.btn {
+  font-size: 18px;
+  font-weight: 200;
+  padding: 5px 15px;
+  border-bottom: 1px solid #884A39;
+}
+.btn:hover {
+  border: 0.1rem solid #884A39;
+  transition-duration: 1.5s;
+}
+#pie-pagina {
+  background-color: var(--color-principal);
+  font-family: var(--tipografia-principal);
+}
+.iconos, .ayudas, .Hipervinculos {
+  list-style: none;
+  margin: auto;
+}
+.link-items {
+  color: black;
+  font-weight: 400;
+  text-decoration: none;
 }
