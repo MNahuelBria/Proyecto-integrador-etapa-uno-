@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Rajdhani:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Open+Sans:wght@300;400;600&family=Rajdhani:wght@300;400;600&display=swap');
 
 :root {
   font-size: 20px;
@@ -7,6 +7,7 @@
   --color-terciario: #ffdead;
   --tipografia-principal: 'Rajdhani', sans-serif;
   --tipografia-secundaria: 'Josefin Sans', sans-serif;
+  --tipografia-parrafos: 'Open Sans', sans-serif;
 }
 * {
   margin: 0;
@@ -67,7 +68,7 @@
 body {
   background-color: var(--color-secundario);
 }
-#Contenedor-categoria, #Contenedor-tarjetas-productos, #Contenedor-articulos {
+#Contenedor-categoria, #Contenedor-tarjetas-productos, #Contenedor-articulos, #seccion-preguntas {
   width: 80%;
   height: auto;
   font-family: var(--tipografia-principal);
@@ -183,14 +184,102 @@ body {
   font-weight: 400;
   text-decoration: none;
 }
-.Articulo {
-  margin-bottom: 1rem;
-  padding: .5rem 0;
-  flex-basis: 400px;
-  align-content:flex-end;
-  height: auto;
+.Articulo-uno,.Articulo-dos, .Articulo-tres{
+  font-family: var(--tipografia-parrafos);
+  padding: 1rem 1rem;
 }
-.imagenes-nosotros {
-  background-position:bottom;
-  flex-basis: 200px;
+.Parrafos {
+  margin-bottom: .4rem;
+  margin-left: .5rem;
+  width: 90%;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+#Sobre-nosotros, #Sobre-calidad, #Sobre-Colaboradores{
+  border-bottom: .1rem solid #894A39;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  font-weight: 400;
+  color: #894917;
+}
+#mis-redes {
+  font-family: var(--tipografia-secundaria);
+  font-weight: 400;
+  color: black;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.icono-redes {
+  margin-bottom: .5rem;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 5px 0;
+}
+.icono-redes:hover {
+  transform: translate(10px, -10px);
+  transition-duration: 6s;
+}
+.icono-facebook {
+  color: #4267B2;
+}
+.icono-tik-tok {
+  color: black;
+}
+.icono-whatsapp {
+  color: #25d366;
+}
+.icono-gmail {
+  color: #ea4335;
+}
+.icono-instagram {
+  color:#c13584;
+}
+.subtitle {
+  margin-top: 1rem;
+  font-family: var(--tipografia-secundaria);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.formulario {
+  font-family: var(--tipografia-secundaria);
+  font-size: 25px;
+  text-align: end;
+  font-weight: 200;
+}
+#Name, #LastName, #Email, #text-area {
+  background-color: var(--color-secundario);
+  border: .1rem solid #b3b3b3;
+  border-radius: 10px;
+  margin: 0 10px;
+  font-family: var(--tipografia-secundaria);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.form-uno {
+  display: flex;
+  justify-content: flex-end;
+}
+.formulario:last-child {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.boton-enviar {
+  border: 0 solid #894A39;
+  width: 20rem;
+  margin: 0 10rem 1rem;
+  align-items: center;
+  box-shadow: 2px -3px 5px 3px #b3b3b3;
+  font-family: var(--tipografia-secundaria);
+  font-weight: 400;
+  font-size: 1rem;
+}
+#Preguntas-frecuentes {
+  border-bottom: 1px solid #894A39;
+  color: #894917;
+  font-family: var(--tipografia-secundaria);
+}
+.accordion-button, .accordion-body {
+  background-color: #e5b78f;
 }
