@@ -5,7 +5,6 @@
   --color-principal: #edbc93;
   --color-secundario: #e6e6e6;
   --color-terciario: #ffdead;
-  /*--color-terciario: ;*/
   --tipografia-principal: 'Rajdhani', sans-serif;
   --tipografia-secundaria: 'Josefin Sans', sans-serif;
 }
@@ -68,7 +67,7 @@
 body {
   background-color: var(--color-secundario);
 }
-#Contenedor-categoria, #Contenedor-tarjetas-productos {
+#Contenedor-categoria, #Contenedor-tarjetas-productos, #Contenedor-articulos {
   width: 80%;
   height: auto;
   font-family: var(--tipografia-principal);
@@ -87,10 +86,10 @@ body {
   border-radius: .5rem 1.5rem;
   height: 25rem;
 }
-h3 {
+.Subtitulos-categorias {
   font-size: 2rem;
   font-weight: 600;
-  color: #2D4356;
+  color: #233443;
 }
 #categoria-1 {
   background-image: url(/img/Velas.webp);
@@ -166,6 +165,11 @@ h3 {
   transition-duration: 1.5s;
   box-shadow: 2px -2px 7px 2px #884A39;
 }
+.titulo-ayudas, .redes {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
 #pie-pagina {
   background-color: var(--color-principal);
   font-family: var(--tipografia-principal);
@@ -178,4 +182,15 @@ h3 {
   color: black;
   font-weight: 400;
   text-decoration: none;
+}
+.Articulo {
+  margin-bottom: 1rem;
+  padding: .5rem 0;
+  flex-basis: 400px;
+  align-content:flex-end;
+  height: auto;
+}
+.imagenes-nosotros {
+  background-position:bottom;
+  flex-basis: 200px;
 }
