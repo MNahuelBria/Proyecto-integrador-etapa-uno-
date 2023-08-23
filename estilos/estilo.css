@@ -68,7 +68,7 @@
 body {
   background-color: var(--color-secundario);
 }
-#Contenedor-categoria, #Contenedor-tarjetas-productos, #Contenedor-articulos, #seccion-preguntas {
+#Contenedor-categoria, #Contenedor-tarjetas-productos, #Contenedor-articulos, #seccion-preguntas, .CARRITO {
   width: 80%;
   height: auto;
   font-family: var(--tipografia-principal);
@@ -282,4 +282,11 @@ body {
 }
 .accordion-button, .accordion-body {
   background-color: #e5b78f;
+}
+.container {
+  border: 2px solid #403f3f;
+}
+#Tarjetas-credito img, #Medios-electronicos img {
+  width: 50px;
+  background-color: white;
 }
