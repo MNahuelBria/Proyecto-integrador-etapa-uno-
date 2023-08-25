@@ -65,9 +65,13 @@
   transition: 3s;
   color: #403f3f;
 }
+#CarritoCompras:active {
+  border-bottom: .1rem solid white;
+}
 body {
   background-color: var(--color-secundario);
 }
+/* CONTENEDORES PRINCIPALES DE CADA PAGINA*/
 #Contenedor-categoria, #Contenedor-tarjetas-productos, #Contenedor-articulos, #seccion-preguntas, .CARRITO {
   width: 80%;
   height: auto;

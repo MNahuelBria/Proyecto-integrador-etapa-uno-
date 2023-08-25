@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Tienda Ecommerce-Contactos</title>
   </head>
   <body>
@@ -27,12 +27,12 @@
     </header>
 
     <main>
-      <section id="seccion-preguntas">
+      <section id="seccion-preguntas"> <!--Caja contendora de preguntas frecuentes-->
         <h2 id="Preguntas-frecuentes">PREGUNTAS FRECUENTES</h2>
         <div class="accordion">
-          <div class="accordion-item">
+          <div class="accordion-item"> <!--Primera pregunta-->
               <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
-                <h4 class="text center">¿Cual es el tiempo de uso de la vela?</h4>
+              ¿Cual es el tiempo de uso de la vela?
               </button>
             <div id="flush-collapseOne" class="accordion-collapse collapse">
               <div class="accordion-body">
@@ -40,9 +40,9 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item"> <!--Segunda pregunta-->
               <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
-                <h4>¿Que hacer si se rompe el pabilo?</h4>
+              ¿Que hacer si se rompe el pabilo?
               </button>
             <div id="flush-collapseTwo" class="accordion-collapse collapse">
               <div class="accordion-body">
@@ -50,9 +50,9 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item"> <!--Tercera pregunta-->
               <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
-                <h4>¿Como retiro los productos?</h4>
+              ¿Como retiro los productos?
               </button>
             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
@@ -62,36 +62,35 @@
           </div>
         </div>
       </section>
-      
 
       <section class="container-fluid row">
         <div class="col-4"> <!--caja de redes-->
-          <h2 class="text-center subtitle">Nuestras redes sociales</h3>
+          <h2 class="text-center subtitle">Nuestras redes sociales</h2>
           <ul id="mis-redes">
-            <li class="icono-redes">
+            <li class="icono-redes"> <!--Facebook-->
               <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f fa-xl icono-facebook"></i></a>
               <p>Deco Andina</p>
             </li>
-            <li class="icono-redes">
+            <li class="icono-redes"> <!--tiktok-->
               <a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok fa-xl icono-tik-tok"></i></a>
               <p>@VelasAndina</p>
             </li>
-            <li class="icono-redes">
+            <li class="icono-redes"> <!--Whatsapp-->
               <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-xl icono-whatsapp"></i></a>
               <p>+54 351 457899</p>
             </li>
-            <li class="icono-redes">
+            <li class="icono-redes"> <!--Instagram-->
               <a href="https://www.instagram.com/andinadecoo/" target="_blank"><i class="fa-brands fa-instagram fa-xl icono-instagram"></i></a>
               <p>@Andinadecoo</p>
             </li>
-            <li class="icono-redes">
+            <li class="icono-redes"> <!--email-->
               <a href=mailto:nagu.b.2012@gmail.com target="_blank"><i class="fa-regular fa-envelope fa-xl icono-gmail"></i></a>
               <p>nagu.b.2012@gmail.com</p>
             </li>
           </ul>
         </div>
 
-        <form action="https://formspree.io/f/xgejkypz" method="post" target="_blank" class="col-8">
+        <form action="https://formspree.io/f/xgejkypz" method="post" target="_blank" class="col-8"> <!--Formulario-->
           <div class="mb-3">
             <h2 class="text-center subtitle">CONTACTANOS...</h2>
             <div class="mb-4 formulario form-uno">
@@ -106,15 +105,12 @@
             </div>  
             <div class="mb-4 formulario form-tres">
               <label for="text-area">¿Tienes alguna pregunta?</label>
-              <textarea id="text-area" type="value" name="comentario" placeholder="Agregar algun comentario aqui" required></textarea>
+              <textarea id="text-area" name="comentario" placeholder="Agregar algun comentario aqui" required></textarea>
             </div>
           </div>
           <button type="submit" class="btn boton-enviar">Enviar</button>
         </form>
       </section>
-      <section class="container-fluid"></section>
-      <section class="container-fluid"></section>
-      
     </main>
     
     <footer id="pie-pagina">
